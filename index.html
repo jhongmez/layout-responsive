@@ -65,26 +65,48 @@
             <div class="gallery-categories">
                 <ul class="gallery-categories__list">
                     <li>
-                        <button class="btn btn-primary">All</button>
+                        <button onclick="rudrSwitchTab('tb_1', 'content_1');" id="tb_1" class="btn btn-primary categories active">All</button>
                     </li>
                     <li>
-                        <button class="btn btn-primary">Branding</button>
+                        <button onclick="rudrSwitchTab('tb_2', 'content_2');" id="tb_2" class="btn btn-primary categories">Branding</button>
                     </li>
                     <li>
-                        <button class="btn btn-primary">Web</button>
+                        <button onclick="rudrSwitchTab('tb_3', 'content_3');" id="tb_3" class="btn btn-primary categories">Web</button>
                     </li>
                     <li>
-                        <button class="btn btn-primary">Photography</button>
+                        <button onclick="rudrSwitchTab('tb_4', 'content_4');" id="tb_4" class="btn btn-primary categories">Photography</button>
                     </li>
                     <li>
-                        <button class="btn btn-primary">App</button>
+                        <button onclick="rudrSwitchTab('tb_5', 'content_5');" id="tb_5" class="btn btn-primary categories">App</button>
                     </li>
                 </ul>
+
+                <div class="gallery-categories__content">
+                    <div id="content_1" class="tabcontent"> 
+                        <div class="gallery content__all"></div>
+                    </div> 
+                    <div id="content_2" class="tabcontent" style="display:none;">
+                        <div class="gallery content__branding" ></div>
+                    </div>
+                    <div id="content_3" class="tabcontent" style="display:none;">
+                        <div class="gallery content__web" ></div>
+                    </div>
+                    <div id="content_4" class="tabcontent" style="display:none;">
+                        <div class="gallery content__photo" ></div>
+                    </div>
+                    <div id="content_5" class="tabcontent" style="display:none;">
+                        <div class="gallery content__app" ></div>
+                    </div>
+                </div>
+                 
+
             </div>
+            
         </section>
     </main>
     <footer>
 
     </footer>
+    <script src="./dist/main.js"></script>
 </body>
 </html>

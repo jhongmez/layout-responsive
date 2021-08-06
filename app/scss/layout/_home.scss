@@ -40,6 +40,7 @@ main {
             &__title {
                 color: $white;
                 letter-spacing: 10px;
+                text-align: center;
             }
 
             &__text {
@@ -48,22 +49,104 @@ main {
                 line-height: 24px;
                 text-align: center;
                 padding: 20px 0 50px;
+                font-size: 1rem;
+                @media (max-width: 500px) {
+                    font-size: 0.8rem;
+                }
             }
         }
     }
 
     .gallery {
-        display: flex;
-        align-items: center;
-        flex-direction: column;
         padding: 60px 0;
 
+        .gallery-grid {
+            display: flex;
+            justify-content: center;
+        }
+
         .gallery-categories {
-            padding: 20px 0;
+            display: flex;
+            flex-direction: column;
             
             &__list {
                 display: flex;
                 flex-direction: row;
+                justify-content: center;
+                padding: 20px 0;
+                @media (max-width: 500px) {
+                    justify-content: flex-start;
+                    padding: 20px 20px;
+                    overflow-x: scroll;
+                }
+
+                .active {
+                    background-color: $primary;
+                    color: $white;
+                }
+            }
+
+            &__content {
+
+                .content__all, 
+                .content__branding, 
+                .content__web, 
+                .content__photo, 
+                .content__app  {
+                    column-count: 3;
+                    column-gap: 40px;
+                    orphans: 1;
+                    widows: 1;
+                    width: 45%;
+                    margin: 0 auto;
+                    @media (max-width: 1440px) {
+                        column-count: 3;
+                        column-gap: 20px;
+                        orphans: 1;
+                        widows: 1;
+                        width: 80%;
+                    }
+
+                    @media (max-width: 1200px) {
+                        column-count: 3;
+                        orphans: 1;
+                        widows: 1;
+                        width: 95%;
+                    }
+
+                    @media (max-width: 769px) {
+                        column-count: 2;
+                        column-gap: 40px;
+                        orphans: 1;
+                        widows: 1;
+                        width: 90%;
+                    }
+
+                    @media (max-width: 500px) {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                    }
+    
+    
+                    .img-content {
+    
+                        &__title {
+                            display: none;
+                        }
+    
+                        &__width {
+                            width: 370px;
+                            margin-bottom: 10px;
+                            @media (max-width: 1200px) {
+                                width: 320px;
+                            }
+                        }
+    
+                    }
+                }
+
             }
 
         }

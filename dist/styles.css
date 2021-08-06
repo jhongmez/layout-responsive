@@ -428,6 +428,7 @@ main .hero .hero-content {
 main .hero .hero-content__title {
   color: #FFF;
   letter-spacing: 10px;
+  text-align: center;
 }
 main .hero .hero-content__text {
   color: #FFF;
@@ -435,18 +436,125 @@ main .hero .hero-content__text {
   line-height: 24px;
   text-align: center;
   padding: 20px 0 50px;
+  font-size: 1rem;
+}
+@media (max-width: 500px) {
+  main .hero .hero-content__text {
+    font-size: 0.8rem;
+  }
 }
 main .gallery {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
   padding: 60px 0;
 }
+main .gallery .gallery-grid {
+  display: flex;
+  justify-content: center;
+}
 main .gallery .gallery-categories {
-  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
 }
 main .gallery .gallery-categories__list {
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  padding: 20px 0;
+}
+@media (max-width: 500px) {
+  main .gallery .gallery-categories__list {
+    justify-content: flex-start;
+    padding: 20px 20px;
+    overflow-x: scroll;
+  }
+}
+main .gallery .gallery-categories__list .active {
+  background-color: #FF5672;
+  color: #FFF;
+}
+main .gallery .gallery-categories__content .content__all,
+main .gallery .gallery-categories__content .content__branding,
+main .gallery .gallery-categories__content .content__web,
+main .gallery .gallery-categories__content .content__photo,
+main .gallery .gallery-categories__content .content__app {
+  column-count: 3;
+  column-gap: 40px;
+  orphans: 1;
+  widows: 1;
+  width: 45%;
+  margin: 0 auto;
+}
+@media (max-width: 1440px) {
+  main .gallery .gallery-categories__content .content__all,
+main .gallery .gallery-categories__content .content__branding,
+main .gallery .gallery-categories__content .content__web,
+main .gallery .gallery-categories__content .content__photo,
+main .gallery .gallery-categories__content .content__app {
+    column-count: 3;
+    column-gap: 20px;
+    orphans: 1;
+    widows: 1;
+    width: 80%;
+  }
+}
+@media (max-width: 1200px) {
+  main .gallery .gallery-categories__content .content__all,
+main .gallery .gallery-categories__content .content__branding,
+main .gallery .gallery-categories__content .content__web,
+main .gallery .gallery-categories__content .content__photo,
+main .gallery .gallery-categories__content .content__app {
+    column-count: 3;
+    orphans: 1;
+    widows: 1;
+    width: 95%;
+  }
+}
+@media (max-width: 769px) {
+  main .gallery .gallery-categories__content .content__all,
+main .gallery .gallery-categories__content .content__branding,
+main .gallery .gallery-categories__content .content__web,
+main .gallery .gallery-categories__content .content__photo,
+main .gallery .gallery-categories__content .content__app {
+    column-count: 2;
+    column-gap: 40px;
+    orphans: 1;
+    widows: 1;
+    width: 90%;
+  }
+}
+@media (max-width: 500px) {
+  main .gallery .gallery-categories__content .content__all,
+main .gallery .gallery-categories__content .content__branding,
+main .gallery .gallery-categories__content .content__web,
+main .gallery .gallery-categories__content .content__photo,
+main .gallery .gallery-categories__content .content__app {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+main .gallery .gallery-categories__content .content__all .img-content__title,
+main .gallery .gallery-categories__content .content__branding .img-content__title,
+main .gallery .gallery-categories__content .content__web .img-content__title,
+main .gallery .gallery-categories__content .content__photo .img-content__title,
+main .gallery .gallery-categories__content .content__app .img-content__title {
+  display: none;
+}
+main .gallery .gallery-categories__content .content__all .img-content__width,
+main .gallery .gallery-categories__content .content__branding .img-content__width,
+main .gallery .gallery-categories__content .content__web .img-content__width,
+main .gallery .gallery-categories__content .content__photo .img-content__width,
+main .gallery .gallery-categories__content .content__app .img-content__width {
+  width: 370px;
+  margin-bottom: 10px;
+}
+@media (max-width: 1200px) {
+  main .gallery .gallery-categories__content .content__all .img-content__width,
+main .gallery .gallery-categories__content .content__branding .img-content__width,
+main .gallery .gallery-categories__content .content__web .img-content__width,
+main .gallery .gallery-categories__content .content__photo .img-content__width,
+main .gallery .gallery-categories__content .content__app .img-content__width {
+    width: 320px;
+  }
 }
 /*# sourceMappingURL=styles.css.map */
