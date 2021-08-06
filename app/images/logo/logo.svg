@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="186" height="35" viewBox="0 0 186 35">
+  <g id="Logo" transform="translate(-160 -33.001)">
+    <text id="CREATIVE_PORTOFLIO" data-name="CREATIVE PORTOFLIO" transform="translate(214 63)" fill="#c3d0d8" font-size="8" font-family="Montserrat-Regular, Montserrat" letter-spacing="0.3em"><tspan x="0" y="0">CREATIVE PORTOFLIO</tspan></text>
+    <text id="SNEAK" transform="translate(214 52)" fill="#707070" font-size="19" font-family="Montserrat-Bold, Montserrat" font-weight="700" letter-spacing="0.3em"><tspan x="0" y="0">SNEAK</tspan></text>
+    <g id="Logo-2" data-name="Logo" transform="translate(-6377.176 -5545.775)">
+      <g id="Grupo_5" data-name="Grupo 5">
+        <g id="Grupo_3" data-name="Grupo 3">
+          <g id="Grupo_1" data-name="Grupo 1">
+            <path id="Trazado_1" data-name="Trazado 1" d="M6542.915,5594.881l21.519-11.575h0v23.154Zm2.305,0,18.083,9.73v-19.458l-18.083,9.728Z" fill="#161f32"/>
+          </g>
+          <g id="Grupo_2" data-name="Grupo 2">
+            <path id="Trazado_2" data-name="Trazado 2" d="M6564.434,5594.881l-21.519,11.579h0V5583.3Zm-2.305,0-18.082-9.728v19.458l18.082-9.73Z" fill="#161f32"/>
+          </g>
+        </g>
+        <path id="Trazado_3" data-name="Trazado 3" d="M6553.675,5613.775l-15.183-25.77h30.365Z" fill="#ff5773"/>
+        <g id="Grupo_4" data-name="Grupo 4">
+          <path id="Trazado_4" data-name="Trazado 4" d="M6553.675,5578.776l16.5,28.006h-33Zm0,3-13.864,23.533h27.729l-13.865-23.533Z" fill="#161f32"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
