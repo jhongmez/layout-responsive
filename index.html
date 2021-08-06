@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Layout responsive - TITA Media</title>
     <link rel="stylesheet" href="dist/styles.css">
 </head>
 <body>
@@ -16,24 +16,24 @@
             <div class="navbar-options">
                 <ul class="navbar-options__list">
                     <li>
-                        <button class="btn btn-primary">All</button>
+                        <a href="#tb_1" class="btn btn-primary">All</a>
                     </li>
                     <li>
-                        <button class="btn btn-primary">Branding</button>
+                        <a href="#tb_2" class="btn btn-primary">Branding</a>
                     </li>
                     <li>
-                        <button class="btn btn-primary">Web</button>
+                        <a href="#tb_3" class="btn btn-primary">Web</a>
                     </li>
                     <li>
-                        <button class="btn btn-primary">Photography</button>
+                        <a href="#tb_4" class="btn btn-primary">Photography</a>
                     </li>
                     <li>
-                        <button class="btn btn-primary">App</button>
+                        <a href="#tb_5" class="btn btn-primary">App</a>
                     </li>
                     <li>
-                        <button class="btn btn-primary">
+                        <a href="#" class="btn btn-primary">
                             <img src="./app/images/icons/ic_search.svg" alt="">
-                        </button>
+                        </a>
                     </li>
                 </ul>
             </div>
@@ -48,17 +48,17 @@
                 <p class="hero-content__text">
                     Magna mundi referrentur quo, no rebum dignissim qui. <br> Per quodsi accusata id, agam labores.
                 </p>
-                <a href="" class="btn btn-secondary">
+                <a href="https://www.linkedin.com/in/jhongomezmarin96/" class="btn btn-secondary">
                     view our work
                 </a>
             </div>
         </section>
         <section class="gallery">
             <div class="gallery-grid">
-                <button class="btn">
+                <button class="btn" onclick="removeGrid()">
                     <img src="./app/images/icons/ic_grid.svg" alt="">
                 </button>
-                <button class="btn">
+                <button class="btn" onclick="changeGrid()">
                     <img src="./app/images/icons/ic_column.svg" alt="">
                 </button>
             </div>
@@ -82,20 +82,20 @@
                 </ul>
 
                 <div class="gallery-categories__content">
-                    <div id="content_1" class="tabcontent"> 
-                        <div class="gallery content__all"></div>
+                    <div id="content_1" class="content"> 
+                        <div class="gallery changeGrid content__all"></div>
                     </div> 
-                    <div id="content_2" class="tabcontent" style="display:none;">
-                        <div class="gallery content__branding" ></div>
+                    <div id="content_2" class="content" style="display:none;">
+                        <div class="gallery changeGrid content__branding" ></div>
                     </div>
-                    <div id="content_3" class="tabcontent" style="display:none;">
-                        <div class="gallery content__web" ></div>
+                    <div id="content_3" class="content" style="display:none;">
+                        <div class="gallery changeGrid content__web" ></div>
                     </div>
-                    <div id="content_4" class="tabcontent" style="display:none;">
-                        <div class="gallery content__photo" ></div>
+                    <div id="content_4" class="content" style="display:none;">
+                        <div class="gallery changeGrid content__photo" ></div>
                     </div>
-                    <div id="content_5" class="tabcontent" style="display:none;">
-                        <div class="gallery content__app" ></div>
+                    <div id="content_5" class="content" style="display:none;">
+                        <div class="gallery changeGrid content__app" ></div>
                     </div>
                 </div>
                  
