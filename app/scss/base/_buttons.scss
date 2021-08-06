@@ -1,6 +1,30 @@
 .btn {
     border: transparent;
-    background-color: $primary;
-    text-transform: uppercase;
-    font-family: serif;
+    background-color: transparent;
+    font-family: $ques-r;
+    padding: 10px 24px;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+    
+    &.btn-primary {
+        letter-spacing: 3px;
+        color: $gray;
+        font-size: 0.875rem;
+        &:hover {
+            background-color: $primary;
+            color: $white;
+            transition: all .2s ease-in-out;
+        }
+    }
+    &.btn-secondary {
+        background-color: $white;
+        color: $primary;
+        font-size: 10px;
+        text-transform: uppercase;
+        letter-spacing: 4px;
+        &:hover {
+            background-color: #e7e6e6;
+            transition: all .2s ease-in-out;
+        }
+    }
 }

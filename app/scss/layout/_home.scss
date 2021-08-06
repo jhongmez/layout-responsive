@@ -1,0 +1,72 @@
+header {
+
+    // Barra de navegacion
+    .navbar {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        padding: 10px 0;
+
+        .navbar-options {
+            
+            &__list {
+                display: flex;
+                li {
+                    margin-left: 20px;
+                }
+            }
+        }
+
+    }
+
+}
+
+main {
+
+    // Banner
+    .hero {
+        background-color: $primary;
+        height: 85vh;
+        width: 100%;
+
+        .hero-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+
+            &__title {
+                color: $white;
+                letter-spacing: 10px;
+            }
+
+            &__text {
+                color: $white;
+                letter-spacing: 6px;
+                line-height: 24px;
+                text-align: center;
+                padding: 20px 0 50px;
+            }
+        }
+    }
+
+    .gallery {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding: 60px 0;
+
+        .gallery-categories {
+            padding: 20px 0;
+            
+            &__list {
+                display: flex;
+                flex-direction: row;
+            }
+
+        }
+    }
+
+}

@@ -71,6 +71,7 @@ pre {
  */
 a {
   background-color: transparent;
+  text-decoration: none;
 }
 
 /**
@@ -338,6 +339,11 @@ template {
   display: none;
 }
 
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
 @font-face {
   font-family: "Questrial-Regular";
   src: url("../../../app/fonts/Questrial/Questrial-Regular.eot");
@@ -359,13 +365,88 @@ template {
 h1 {
   font-family: "Montserrat-Bold";
   text-transform: uppercase;
-  font-size: 40rem;
+  font-size: 40px;
+  margin: 0;
 }
 
 .btn {
   border: transparent;
+  background-color: transparent;
+  font-family: "Questrial-Regular";
+  padding: 10px 24px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+.btn.btn-primary {
+  letter-spacing: 3px;
+  color: #707070;
+  font-size: 0.875rem;
+}
+.btn.btn-primary:hover {
   background-color: #FF5672;
+  color: #FFF;
+  transition: all 0.2s ease-in-out;
+}
+.btn.btn-secondary {
+  background-color: #FFF;
+  color: #FF5672;
+  font-size: 10px;
   text-transform: uppercase;
-  font-family: serif;
+  letter-spacing: 4px;
+}
+.btn.btn-secondary:hover {
+  background-color: #e7e6e6;
+  transition: all 0.2s ease-in-out;
+}
+
+header .navbar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  padding: 10px 0;
+}
+header .navbar .navbar-options__list {
+  display: flex;
+}
+header .navbar .navbar-options__list li {
+  margin-left: 20px;
+}
+
+main .hero {
+  background-color: #FF5672;
+  height: 85vh;
+  width: 100%;
+}
+main .hero .hero-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+main .hero .hero-content__title {
+  color: #FFF;
+  letter-spacing: 10px;
+}
+main .hero .hero-content__text {
+  color: #FFF;
+  letter-spacing: 6px;
+  line-height: 24px;
+  text-align: center;
+  padding: 20px 0 50px;
+}
+main .gallery {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 60px 0;
+}
+main .gallery .gallery-categories {
+  padding: 20px 0;
+}
+main .gallery .gallery-categories__list {
+  display: flex;
+  flex-direction: row;
 }
 /*# sourceMappingURL=styles.css.map */
