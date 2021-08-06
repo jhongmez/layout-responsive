@@ -399,12 +399,21 @@ h1 {
   transition: all 0.2s ease-in-out;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 header .navbar {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
   padding: 10px 0;
+}
+@media (max-width: 769px) {
+  header .navbar .navbar-options {
+    display: none;
+  }
 }
 header .navbar .navbar-options__list {
   display: flex;
@@ -482,6 +491,16 @@ main .gallery .gallery-categories__content .content__app {
   widows: 1;
   width: 45%;
   margin: 0 auto;
+}
+main .gallery .gallery-categories__content .content__all.column,
+main .gallery .gallery-categories__content .content__branding.column,
+main .gallery .gallery-categories__content .content__web.column,
+main .gallery .gallery-categories__content .content__photo.column,
+main .gallery .gallery-categories__content .content__app.column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 @media (max-width: 1440px) {
   main .gallery .gallery-categories__content .content__all,

@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 header {
 
     // Barra de navegacion
@@ -9,6 +13,9 @@ header {
         padding: 10px 0;
 
         .navbar-options {
+            @media (max-width: 769px) {
+                display: none;
+            }
             
             &__list {
                 display: flex;
@@ -99,6 +106,14 @@ main {
                     widows: 1;
                     width: 45%;
                     margin: 0 auto;
+
+                    &.column{
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                    }
+
                     @media (max-width: 1440px) {
                         column-count: 3;
                         column-gap: 20px;
