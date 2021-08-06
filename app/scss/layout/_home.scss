@@ -168,3 +168,28 @@ main {
     }
 
 }
+
+footer {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 40px 0;
+
+    p {
+        color: $white3;
+        letter-spacing: 5px;
+        span {
+            color: $primary;
+        }
+    }
+    ul {
+        display: flex;
+        flex-direction: row;
+        li {
+            margin: 0 10px;
+        }
+    }
+
+}
